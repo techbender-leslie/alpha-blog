@@ -1,0 +1,42 @@
+footer {
+	clear: both;
+}
+
+ul li {
+	display: inline;
+}
+
+body {
+	background-color: gold;
+}
+
+.boxes {
+	margin-left: 100px;
+}
+
+#box1 {
+	background-color: blue;
+	width: 25%;
+	height: 400px;
+	float: left;
+	margin: 30px;
+	padding: 10px;
+}
+
+#box2 {
+	background-color: green;
+	width: 25%;
+	height: 400px;
+	float: left;
+	margin: 30px;
+	padding: 10px;
+}
+
+#box3 {
+	background-color: darkorange;
+	width: 25%;
+	height: 400px;
+	float: left;
+	margin: 30px;
+	padding: 10px;
+}
