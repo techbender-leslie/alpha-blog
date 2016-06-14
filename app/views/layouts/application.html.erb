@@ -11,16 +11,20 @@
   <h1><center>TechBenders - Project 0</center></h1>
 </header>
 
-<nav>
+<!-- <nav>
 	<ul>
 		<li><a href="#">Something #1</a></li>
 		<li><a href="#">Something #2</a></li>
 		<li><a href="#">Something #3</a></li>
 	</ul>
-</nav>
+</nav> -->
 
 <body>
-
+  <% flash.each do |name, msg| %>
+  	<ul>
+    	<li><%= msg %></li>
+  	</ul>
+  <% end %>
 <%= yield %>
 
 </body>
