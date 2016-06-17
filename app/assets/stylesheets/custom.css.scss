@@ -1,19 +1,79 @@
+$navbar-default-bg: black;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-footer {
-	clear: both;
+#logo {
+	float: left;
+	font-size: 1.7em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
 }
+
+#logo:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: asset-url('rainbow_light.jpg');
+	background-size: cover;
+	width: auto;
+	height: 450px;
+	
+}
+
+.jumbotron h1 {
+	color: white;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+.btn-xlarge {
+	font-size: 1.7em;
+	background-color: black;
+}
+
+footer {
+	/*clear: both;
+	*/
+	margin-top: 45px;
+	padding-top: 5px;
+	color: #777;
+}
+
+footer small {
+	float: left;
+}
+
+footer ul {
+	float: right;
+	list-style: none;
+}
+
+footer ul li {
+	float: left;
+	margin-left: 15px;
+}
+
 
 body {
 	background-color: gold;
 }
 
-.boxes {
+/*.boxes {
 	margin-left: 100px;
-}
+}*/
 
-#box1 {
+/*#box1 {
 	background-color: blue;
 	width: 25%;
 	height: 400px;
@@ -38,4 +98,4 @@ body {
 	float: left;
 	margin: 30px;
 	padding: 10px;
-}
+}*/

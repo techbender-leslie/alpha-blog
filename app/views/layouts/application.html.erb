@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AlphaBlog</title>
+  <title>TechBenders - Bending Technology for all</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 
 <header>
-  <h1><center>TechBenders - Project 0</center></h1>
+  <!-- <h1><center>TechBenders - Project 0</center></h1> -->
 </header>
 
-<!-- <nav>
-	<ul>
-		<li><a href="#">Something #1</a></li>
-		<li><a href="#">Something #2</a></li>
-		<li><a href="#">Something #3</a></li>
-	</ul>
-</nav> -->
 
 <body>
-  <% flash.each do |name, msg| %>
-  	<ul>
-    	<li><%= msg %></li>
-  	</ul>
-  <% end %>
-<%= yield %>
+  <%= render 'layouts/navigation' %>
+  <%= render 'layouts/messages' %>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <%= render 'layouts/footer' %>
 
 </body>
-<br>
-
-<footer>
-	<hr>
-	<p>&copy; 2016 TechBenders, LLC. All rights reserved and fiercely protected</p>
-</footer>
 </html>
